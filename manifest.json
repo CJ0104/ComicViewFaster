@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "AutoClickExtension",
+    "version": "1.0",
+    "description": "自動點擊按鈕的擴充程式",
+    "permissions": [
+      "activeTab"
+    ],
+    "action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "icons": {
+      "48": "icon.png"
+    }
+  }
+  
